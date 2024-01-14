@@ -7,4 +7,5 @@ const { renderHome, formularioFrontend } = require('../controllers/index.control
 // Formulario //
 router.post('/formulario_contacto', formularioFrontend);
 
+
 module.exports = router;

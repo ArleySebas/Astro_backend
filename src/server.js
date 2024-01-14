@@ -18,10 +18,11 @@ app.set('port', process.env.PORT || 4000);
 
 //Middlewares;
 app.use(morgan('dev'));
+app.use(cors())
 app.use(express.urlencoded({extended: false})); //interpreta los datos enviados desde un html convirtiéndolos en un objeto
 app.use(express.json());
 app.use(bodyParser.json());
-app.use(cors())
+
 
 const sessionStore = MongoStore.create({
     mongoUrl: LSC_APP_MONGODB_HOST,
