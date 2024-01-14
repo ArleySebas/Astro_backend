@@ -33,6 +33,7 @@ indexCtrl.formularioFrontend = async (req, res) => {
         
         ----`;
 
+        console.log('casi envío el email');
         enviarMail(subject, text);
 
         res.json({
